@@ -27,15 +27,15 @@ function downloadBorusanCertificate() {
 let clickCount = 0;
 
 function showMessage() {
-    alert("Rana <3");
+    alert("Please don't click more.");
 }
 
 function checkClicks() {
     clickCount++;
     
-    if (clickCount === 3) {
+    if (clickCount === 10) {
         showMessage();
-        clickCount = 0; // Sıfırlama
+        clickCount = 0;
     }
 }
 
