@@ -22,3 +22,20 @@ function downloadBorusanCertificate() {
     link.download = 'myCertificate';
     link.click();
 }
+
+
+let clickCount = 0;
+
+
+function checkClicks() {
+    clickCount++;
+    
+    if (clickCount === 3) {
+        showMessage();
+        clickCount = 0; // Sıfırlama
+    }
+}
+
+function showMessage() {
+    alert("Rana <3");
+}
