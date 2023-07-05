@@ -1,0 +1,319 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+body{
+
+    background:lightblue !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+
+.container{
+    margin: 50px;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    max-width: 1000px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+
+.container .left-side{
+
+
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+
+
+}
+
+
+.container .right-side{
+
+
+    position: relative;
+    background-color: #ffffff;
+    padding: 40px;
+
+
+}
+
+
+.ProfileText{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255,0.2);
+}
+
+
+.ProfileText .image {
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.ProfileText h2 {
+    font-size: 1.25em;
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height:1.4em ;
+}
+
+.ProfileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.ProfileText .image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.Info{
+    padding-top: 40px;
+}
+
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.Info ul
+{
+    position: relative;
+}
+
+.Info ul li{
+    
+    list-style: none;
+    margin : 10px 0;
+    cursor: pointer;
+}
+
+.Info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.Info ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+a{
+    padding: 0px;
+    color:#fff;
+    text-decoration: none;
+}
+
+.contactInfo.education li{
+    margin-bottom: 15px;
+
+}
+
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.contactInfo.language .text {
+    color: #fff;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.contactInfo.language .percent {
+
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.contactInfo.language .percent div{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#03a9f4;
+}
+
+
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0px;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #003147;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+img {
+    width: 12px;
+    height: 12px;
+  }
+
+
+.interest ul:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.interest ul:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+
+@media (max-width:967px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:587) {
+    .about .box {
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+}
+
