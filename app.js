@@ -27,8 +27,7 @@ function downloadBorusanCertificate() {
 let clickCount = 0;
 
 function showMessage() {
-    // alert("Rana <3");
-    console.log("<3");
+    alert("Rana <3");
 }
 
 function checkClicks() {
